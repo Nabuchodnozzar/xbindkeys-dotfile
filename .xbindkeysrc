@@ -1,0 +1,40 @@
+# Deant's original xbindkeysrc file
+
+# REMINDER
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+# The format of a command line is:
+#    "command to start"
+#       associated key
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+# END OF REMINDER
+
+# Increase Volume
+"pamixer --increase 5"
+	XF86AudioRaiseVolume
+
+# Decrease Volume
+"pamixer --decrease 5"
+	XF86AudioLowerVolume
+
+# Toggle Volume
+"pamixer --toggle-mute"
+	XF86AudioMute
+
+# Increase Backlight
+"xbacklight +5"
+	XF86MonBrightnessUp
+
+# Decrease Backlight
+"xbacklight -5"
+	XF86MonBrightnessDown
+
+# Toggle TouchPad
+"touchpad-toggle.sh"
+	XF86TouchpadToggle
+
+# Hibernate
+"systemctl suspend"
+	XF86Sleep
